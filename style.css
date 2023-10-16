@@ -1,7 +1,10 @@
 body {background-color: black;}
 h1 {color: white;}
 h2 {color: lime; position: fixed; right: 390px; top: 0px}
-p {color: white;}
+p {
+ color: white;
+ background-color: #111111;
+}
 span {color: white; position: relative; bottom: 30px}
 
 /* general links */
