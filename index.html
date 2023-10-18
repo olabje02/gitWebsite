@@ -9,21 +9,23 @@
   <title>Git Nettside</title>
   <link rel="icon" type="image/x-icon" href="icon.png">
 
-  <!-- function to resize an object to its max size (with no scrolling) -->
   <script>
+   // function to resize an object to its max size (with no scrolling)
    function resizeIt(obj) {
     obj.style.height = (window.innerHeight-80) + 'px';
     obj.style.width = (window.innerWidth-20) + 'px';
    }
-       var resizeTimer;
 
-window.addEventListener('resize', function() {
-  clearTimeout(resizeTimer);
+   // handler for window resizes, Laszlo got this from artificial intelligence
+   var resizeTimer;
 
-  resizeTimer = setTimeout(function() {
-    location.reload();
-  }, 250);
-});
+   window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+
+    resizeTimer = setTimeout(function() {
+     location.reload();
+    }, 250);
+   });
   </script>
 
  </head>
