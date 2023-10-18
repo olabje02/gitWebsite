@@ -1,12 +1,11 @@
+/* different types of text */
 body {background-color: black;}
 h1 {color: white; font-size: xxx-large;}
-h2 {color: lime; position: fixed; right: 390px; top: 0px}
 p {
  color: white;
  background-color: #111111;
  font-size: large;
 }
-span {color: white; position: relative; bottom: 30px}
 
 /* general links */
 a {color: lightseagreen;}
@@ -33,20 +32,5 @@ a:hover {
  color: limegreen;
 }
 
-/* a class for rotate something 180 degress */
-.rotate180 {
- -webkit-transform: rotate(180deg);
- -moz-transform: rotate(180deg);
- -o-transform: rotate(180deg);
- -ms-transform: rotate(180deg);
- transform: rotate(180deg);
-}
-
 /* iframes */
-#theframe {background-color: white; position: fixed; right: 0px; top: 50px;}
 #indexframe {background-color: white;}
-
-/* the lies iframe and settings */
-input {position: fixed; right: 190px; top: 25px}
-#connect {position: fixed; right: 120px; top: 25px}
-#enable {position: fixed; right: 2px; top: 25px}
