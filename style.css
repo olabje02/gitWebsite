@@ -1,9 +1,10 @@
 body {background-color: black;}
-h1 {color: white;}
+h1 {color: white; font-size: xxx-large;}
 h2 {color: lime; position: fixed; right: 390px; top: 0px}
 p {
  color: white;
  background-color: #111111;
+ font-size: large;
 }
 span {color: white; position: relative; bottom: 30px}
 
