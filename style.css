@@ -8,9 +8,9 @@ p {
 }
 
 /* general links */
-a {color: lightseagreen;}
+a {color: blue;}
 a:hover {
- color: limegreen;
+ color: cyan;
 }
 
 /* navigation bar classes */
