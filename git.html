@@ -19,7 +19,7 @@
 
   <p>Valgfri steg A: Legg til ett fjern repositorie ved å bruke "git remote add 'navn' 'url'".</p>
 
-  <samp>$ git remote add origin https://github.com/somewhere</samp>
+  <samp>$ git remote add origin https://github.com/somewhere/somerepo.git</samp>
 
   <p>Steg 2: Gjør tinger i repositorie.</p>
   <p>Steg 3: Bruk "git add ." for å legge til alle filer eller "git add 'filnavn'" for å legge til filer til git repositoriet.</p>
@@ -56,8 +56,8 @@
    remote: Compressing objects: 100% (1/1), done.<br>
    remote: Total 4 (delta 3), reused 4 (delta 3), pack-reused 0<br>
    Unpacking objects: 100% (4/4), 414 bytes | 7.00 KiB/s, done.<br>
-   From https://github.com/test/test<br>
-   &nbsp&nbsp&nbsp325c8de..dbe4893  master       -> origin/master
+   From https://github.com/test/test.git<br>
+   &nbsp&nbsp&nbsp325c8de..dbe4893  master       -&gt; origin/master
   </samp>
 
   <p>Valgfri steg D: Hvis det er endringer, bruk "git pull".</p>
@@ -72,7 +72,17 @@
 
   <p>Valgfri steg E: Send dine endringer til fjern-repositorier med "git push".</p>
 
-  <samp>$ git push</samp>
+  <samp>$ git push<br>
+   Enumerating objects: 7, done.<br>
+   Counting objects: 100% (7/7), done.<br>
+   Delta compression using up to 12 threads<br>
+   Compressing objects: 100% (4/4), done.<br>
+   Writing objects: 100% (4/4), 1.15 KiB | 588.00 KiB/s, done.<br>
+   Total 4 (delta 2), reused 0 (delta 0), pack-reused 0<br>
+   remote: Resolving deltas: 100% (2/2), completed with 2 local objects.<br>
+   To https://github.com/test/test.git<br>
+   &nbsp&nbsp&nbspdbe4893..31ba82c  master -&gt; master
+  </samp>
 
   <br>
 
