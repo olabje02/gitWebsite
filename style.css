@@ -8,13 +8,16 @@ h1 {
 
 p {
  color: white;
- background-color: #111111;
+ background-color: #151515;
  font-size: large;
 }
 
 samp {
     color: white;
     background-color: darkblue;
+    display: inline-block;
+    border: 1px solid #999;
+    padding: 10px;
 }
 
 /* navigation bar classes */
