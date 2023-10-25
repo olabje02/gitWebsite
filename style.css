@@ -12,6 +12,11 @@ p {
  font-size: large;
 }
 
+samp {
+    color: white;
+    background-color: #111111;
+}
+
 /* navigation bar classes */
 .navbar {
  width: 120%;
