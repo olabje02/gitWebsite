@@ -12,16 +12,67 @@
   <h1>Hvordan å git gud:</h1>
 
   <p>Steg 1: Initialiser en git repositorie i din mappe ved å bruke "git init".</p>
+
   <samp>$ git init .<br>
-   Initialized empty Git repository in &lt;somewhere&gt;
+   Initialized empty Git repository in &lt;somewhere/.git&gt;
   </samp>
+
   <p>Valgfri steg A: Legg til ett fjern repositorie ved å bruke "git remote add 'navn' 'url'".</p>
+
+  <samp>$ git remote add origin https://github.com/somewhere</samp>
+
   <p>Steg 2: Gjør tinger i repositorie.</p>
   <p>Steg 3: Bruk "git add ." for å legge til alle filer eller "git add 'filnavn'" for å legge til filer til git repositoriet.</p>
+
+  <samp>$ git add .</samp>
+
+  <p>Valgfri steg B: Sjekk statusen ved å bruke "git status"</p>
+
+  <samp>$ git status<br>
+   On branch master<br>
+   <br>
+   No commits yet<br>
+   <br>
+   Changes to be committed:<br>
+   &nbsp&nbsp(use "git rm --cached &lt;file&gt;..." to unstage)<br>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnew file:   test.html<br>
+  </samp>
+
   <p>Steg 4: Bruk "git commit" for å large endringer i et commit, det er foreslått å bruke "git commit -m 'melding'" til å large din commit med en melding om hva som ble gjort.</p>
-  <p>Valgfri steg B: Sjekk etter fjern-repositorie endringer med "git fetch".</p>
-  <p>Valgfri steg C: Hvis det er endringer, bruk "git pull".</p>
-  <p>Valgfri steg D: Send dine endringer til fjern-repositorier med "git push".</p>
+
+  <samp>$ git commit -m "sample commit message"<br>
+   [master 4af35ca] sample commit message<br>
+   &nbspAuthor: test &lt;test@test.org&gt;<br>
+   &nbspDate: Wed Oct 25 11:20:03 2023 +0200<br>
+   &nbsp1 file changed, 0 insertions(+), 0 deletions(-)<br>
+   &nbspcreate mode 100644 test.html
+  </samp>
+
+  <p>Valgfri steg C: Sjekk etter fjern-repositorie endringer med "git fetch".</p>
+
+  <samp>$ git fetch<br>
+   remote: Enumerating objects: 7, done.<br>
+   remote: Counting objects: 100% (7/7), done.<br>
+   remote: Compressing objects: 100% (1/1), done.<br>
+   remote: Total 4 (delta 3), reused 4 (delta 3), pack-reused 0<br>
+   Unpacking objects: 100% (4/4), 414 bytes | 7.00 KiB/s, done.<br>
+   From https://github.com/test/test<br>
+   &nbsp&nbsp&nbsp325c8de..dbe4893  master       -> origin/master
+  </samp>
+
+  <p>Valgfri steg D: Hvis det er endringer, bruk "git pull".</p>
+
+  <samp>$ git pull<br>
+   Updating 325c8de..dbe4893<br>
+   Fast-forward<br>
+   &nbsplogg.html | 1 +<br>
+   &nbspstyle.css | 2 +-<br>
+   &nbsp2 files changed, 2 insertions(+), 1 deletion(-)
+  </samp>
+
+  <p>Valgfri steg E: Send dine endringer til fjern-repositorier med "git push".</p>
+
+  <samp>$ git push</samp>
 
   <br>
 
