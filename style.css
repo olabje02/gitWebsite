@@ -22,7 +22,7 @@ samp {
 
 /* navigation bar classes */
 .navbar {
- width: 120%;
+ width: 100%;
  background-color: #222;
  overflow: hidden;
 }
@@ -46,6 +46,11 @@ samp {
     width: 2%;
     vertical-align: middle;
     margin: 3px;
+}
+
+#LinkCOC {
+    float: right;
+    margin-top: 0.25%;
 }
 
 /* iframes */
