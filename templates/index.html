@@ -4,10 +4,10 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css  ">
 
   <title>Git Nettside</title>
-  <link rel="icon" type="image/x-svg" href="icon.svg">
+  <link rel="icon" type="image/x-svg" href="{{ url_for('static', filename='icon.svg') }}">
 
   <script>
    // function to resize an object to its max size (with no scrolling)
@@ -33,20 +33,20 @@
 
   <!-- the navigation bar -->
   <div class="navbar">
-   <img src="icon.svg">
+    <img src="../static/icon.svg" alt="Git Logo">
    <span>
-    <a target="indexframe" href="git.html">Git</a>
-    <a target="indexframe" href="git.html#gitgud" class="subLink">git-gud</a>
-    <a target="indexframe" href="git.html#tips" class="subLink">tips</a>
-    <a target="indexframe" href="git.html#commands" class="subLink">kommandoer</a>
+    <a target="indexframe" href="../static/git.html">Git</a>
+    <a target="indexframe" href="../static/git.html#gitgud" class="subLink">git-gud</a>
+    <a target="indexframe" href="../static/git.html#tips" class="subLink">tips</a>
+    <a target="indexframe" href="../static/git.html#commands" class="subLink">kommandoer</a>
    </span>
-   <a target="indexframe" href="logg.html">Logg</a>
+   <a target="indexframe" href="../static/logg.html">Logg</a>
    <a target="_blank" href="https://git-scm.com">Git-scm.org</a>
   </div>
   <hr class="solid">
 
   <!-- this iframe contains the webpage content -->
-  <iframe src="git.html" id="indexframe" name="indexframe" frameborder="0" onload="resizeIt(this)"></iframe>
+  <iframe src="../static/git.html" id="indexframe" name="indexframe" frameborder="0" onload="resizeIt(this)"></iframe>
 
  </body>
 
