@@ -26,6 +26,11 @@
      location.reload();
     }, 250);
    });
+
+   function loadPage(page) {
+    var indexframe = document.getElementById("indexframe");
+    indexframe.src = page;
+   }
   </script>
 
  </head>
@@ -35,12 +40,12 @@
   <div class="navbar">
     <img src="../static/icon.svg" alt="Git Logo">
    <span>
-    <a target="indexframe" href="../static/git.html">Git</a>
-    <a target="indexframe" href="../static/git.html#gitgud" class="subLink">git-gud</a>
-    <a target="indexframe" href="../static/git.html#tips" class="subLink">tips</a>
-    <a target="indexframe" href="../static/git.html#commands" class="subLink">kommandoer</a>
+    <a href="#" onclick="loadPage('../static/git.html')">Git</a>
+    <a href="#" onclick="loadPage('../static/git.html#gitgud')" class="subLink">git-gud</a>
+    <a href="#" onclick="loadPage('../static/git.html#tips')" class="subLink">tips</a>
+    <a href="#" onclick="loadPage('../static/git.html#commands')" class="subLink">kommandoer</a>
    </span>
-   <a target="indexframe" href="../static/logg.html">Logg</a>
+   <a href="#" onclick="loadPage('../static/logg.html')">Logg</a>
    <a target="_blank" href="https://git-scm.com">Git-scm.org</a>
   </div>
   <hr class="solid">
